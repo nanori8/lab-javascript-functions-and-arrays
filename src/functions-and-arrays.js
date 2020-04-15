@@ -29,8 +29,7 @@ const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 function sumNumbers(array) {
   let returnedNumber = 0;
   if (array.length === 0) {return 0}
-  else if(array.length === 0) {return array[i]}
-   for(let i=0; i < array.length; i++){ 
+     for(let i=0; i < array.length; i++){ 
     {returnedNumber += array[i]}
    }
   return returnedNumber;
@@ -51,6 +50,26 @@ return dividedNumber
 // Level 2: Array of strings
 const wordsArr = ['seat', 'correspond', 'linen', 'motif', 'hole', 'smell', 'smart', 'chaos', 'fuel', 'palace'];
 
+
+function averageWordLength (array) {
+  let arrayWithWordLength = [];
+  let dividedNumber = 0 
+    if (array.length === 0) {return null}
+    else if (array.length === 1) {
+  return array[0].length}
+
+ for(let i=0; i < array.length; i++){ 
+  arrayWithWordLength.push(array[i].length)} 
+
+ for(let i=0; i < arrayWithWordLength.length; i++){ 
+  {dividedNumber = averageNumbers(arrayWithWordLength)}
+
+ }
+return dividedNumber 
+}
+
+
+
 // Iteration #5: Unique arrays
 const wordsUnique = [
   'crab',
@@ -66,9 +85,27 @@ const wordsUnique = [
   'bring'
 ];
 
+function uniquifyArray (array){
+  let onlyUnique = [];
+  if(array.length === 0) {return null}
+  for (let i=0; i<array.length; i++)
+  {if(onlyUnique.includes(array[i])){
+    continue
+  } else {onlyUnique.push(array[i])}
+  }  return  onlyUnique
+}
+
 // Iteration #6: Find elements
 const wordsFind = ['machine', 'subset', 'trouble', 'starting', 'matter', 'eating', 'truth', 'disobedience'];
 
+function doesWordExist (array, itemToSearch){
+  if(array.length === 0) {
+    return null
+    } else if (array.includes(itemToSearch)) {
+      return true
+      } else {return false
+      }
+}
 // Iteration #7: Count repetition
 const wordsCount = [
   'machine',
@@ -83,7 +120,16 @@ const wordsCount = [
   'disobedience',
   'matter'
 ];
-
+function howManyTimes (array, wordToSearch){
+  let counter = 0;
+  if(array.length === 0) {return 0}
+  for (let i=0; i<array.length; i++) {
+    if(wordToSearch === array[i]) {
+    counter++
+  } else {counter}
+  }  
+  return  counter
+}
 // Iteration #8: Bonus
 
 const matrix = [
